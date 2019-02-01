@@ -1,0 +1,24 @@
+{
+    "data" : {
+        "activos": [
+            {
+                "qr" : "C:\\dev\\test\\reportes\\storage\\reportes\\qr.png",
+                "logo" : "C:\\dev\\test\\reportes\\storage\\reportes\\hb.logo.png",
+                "codigo" : "00000001",
+                "descripcion" : "Switch TP-LINK TL-SG 1024D"
+            },
+            {
+                "qr" : "C:\\dev\\test\\reportes\\storage\\reportes\\qr.png",
+                "logo" : "C:\\dev\\test\\reportes\\storage\\reportes\\hb.logo.png",
+                "codigo" : "00000002",
+                "descripcion" : "Switch TP-LINK TL-SG 1024D"
+            },
+            {
+                "qr" : "C:\\dev\\test\\reportes\\storage\\reportes\\qr.png",
+                "logo" : "C:\\dev\\test\\reportes\\storage\\reportes\\hb.logo.png",
+                "codigo" : "00000003",
+                "descripcion" : "Switch TP-LINK TL-SG 1024D"
+            }
+        ]
+    }
+}

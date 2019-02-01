@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CodigoQR" pageWidth="150" pageHeight="70" orientation="Landscape" whenNoDataType="AllSectionsNoDetail" columnWidth="150" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="738d4f79-3a6b-40b0-8318-a486ec22005e">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="imagen" class="java.lang.String"/>
+	<parameter name="codigo" class="java.lang.String"/>
+	<parameter name="complementaria" class="java.lang.String">
+		<defaultValueExpression><![CDATA[complementaria]]></defaultValueExpression>
+	</parameter>
+	<parameter name="etiqueta" class="java.lang.String">
+		<defaultValueExpression><![CDATA[Etiqueta]]></defaultValueExpression>
+	</parameter>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="87" y="6" width="50" height="50" uuid="9d37f70e-5bad-459a-96d5-4e5b6c320b2a"/>
+				<imageExpression><![CDATA[$P{codigo}]]></imageExpression>
+			</image>
+			<image scaleImage="RetainShape" hAlign="Center" vAlign="Middle">
+				<reportElement key="image-1" x="7" y="10" width="63" height="31" uuid="5cbf9be2-66dd-4c8d-8e64-ed12d3034178"/>
+				<imageExpression><![CDATA[$P{imagen}.toString()]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="7" y="48" width="73" height="9" uuid="ec35823e-6ea9-4c52-8e66-47fa06a7b832"/>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{etiqueta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="7" y="59" width="143" height="9" uuid="66784b44-0408-4b5d-8afc-657ec3db44b8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{complementaria}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>

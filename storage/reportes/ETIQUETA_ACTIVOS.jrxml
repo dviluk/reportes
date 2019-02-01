@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ETIQUETA_ACTIVOS" pageWidth="150" pageHeight="70" orientation="Landscape" columnWidth="150" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" whenResourceMissingType="Key" uuid="692ebeb5-fc57-4dd6-ad70-2a0c36af3037">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<queryString language="json">
+		<![CDATA[data.activos]]>
+	</queryString>
+	<field name="codigo" class="java.lang.String"/>
+	<field name="descripcion" class="java.lang.String"/>
+	<field name="logo" class="java.lang.String"/>
+	<field name="qr" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="70" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="7" y="10" width="63" height="31" uuid="de24f057-23d0-46bd-a0d9-3b1872e673eb"/>
+				<imageExpression><![CDATA[$F{logo}]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="87" y="6" width="50" height="50" uuid="993135fd-fed7-40bc-9e47-dbaa665c7bed"/>
+				<imageExpression><![CDATA[$F{qr}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="7" y="48" width="73" height="9" uuid="1da4da71-4195-417a-bec3-4dc7d01a8faa"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="7" y="59" width="143" height="9" uuid="b572aef1-2e17-421c-a0b6-4efdedc8a927"/>
+				<textElement>
+					<font size="6"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
